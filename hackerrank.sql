@@ -38,3 +38,11 @@ where city RLIKE '^[aeiou]';
 -- can also replace RLIKE with REGEXP
 -- or use
 -- where city like 'a%' or city like 'e%' or city like 'i%' or city like 'o%' or city like 'u%';
+
+-- Weather Observation Station 7
+--------------------------------
+-- Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+
+select distinct city
+from station
+where city rlike '[aeiou]$';
